@@ -31,12 +31,12 @@ end
 def hit?(current_card_total)
   prompt_user
   case get_user_input
-  when's'
-  when 'h'
-    current_card_total += deal_card
-  else
-    invalid_command
-    current_card_total = hit?(current_card_total)
+    when's'
+    when 'h'
+      current_card_total += deal_card
+    else
+      invalid_command
+      current_card_total = hit?(current_card_total)
   end 
   
   return current_card_total
