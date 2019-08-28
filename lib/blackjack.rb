@@ -51,7 +51,7 @@ end
 #####################################################
 
 def runner
-  welcom
+  welcome
   total = initial_round
   while total < 21 do
     hit?
