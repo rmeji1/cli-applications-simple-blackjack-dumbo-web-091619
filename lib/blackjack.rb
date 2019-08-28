@@ -51,6 +51,11 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcom
+  total = initial_round
+  while total < 21 do
+    hit?
+    display_card_total
+  end
 end
     
